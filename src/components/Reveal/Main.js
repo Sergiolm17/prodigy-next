@@ -22,11 +22,12 @@ export default function RevealMain({ children }) {
       deck = new RevealJS(revealRef.current)
       deck
         .initialize({
-          controls: false,
+          controls: true,
+          controlsTutorial: true,
           progress: true,
           history: true,
           center: true,
-          transition: 'slide'
+          transition: 'fade'
         })
         .then(e => {
           setInitialIndices({
