@@ -10,13 +10,7 @@ import Diapositiva5 from './Diapositiva5'
 
 export default function PageHome() {
   return (
-    <RevealMain
-      style={
-        {
-          //backgrouond url
-        }
-      }
-    >
+    <RevealMain>
       <Slides>
         <Section id="diapositiva-1">
           <Diapositiva1 />
