@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react'
 import { useRevealDeck } from '../../components/Reveal'
+import Image from 'next/image'
 
 export default function First() {
   const [Deck, { progress }] = useRevealDeck()
@@ -10,7 +11,17 @@ export default function First() {
   return (
     <>
       <section>
-        <h1>Prodigy</h1>
+        <div>
+          <h1>Prodigy</h1>
+        </div>
+        <div>
+          <Image
+            src="https://i.imgur.com/7CW2Saf.png"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          ></Image>
+        </div>
       </section>
       <section>
         <h2>¿Qué es Prodigy?</h2>

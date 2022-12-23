@@ -8,6 +8,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withPlugins(
   [[withBundleAnalyzer({})], [withImages, { esModule: true, inlineImageLimit: 8192 }]],
   {
-    reactStrictMode: false
+    reactStrictMode: false,
+    images: {
+      domains: ['i.imgur.com']
+    }
   }
 )

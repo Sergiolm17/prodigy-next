@@ -5,7 +5,7 @@ import RevealJS from './revealjs'
 import RevealProvider from './RevealContext'
 let deck = false
 
-export default function RevealMain({ children }) {
+export default function RevealMain({ children, style = {} }) {
   const revealRef = useRef(null)
   const [ready, setReady] = useState(false)
   const [initialIndices, setInitialIndices] = useState({})
@@ -41,15 +41,7 @@ export default function RevealMain({ children }) {
   }, [])
 
   return (
-    <div
-      ref={revealRef}
-      className="reveal"
-      style={{
-        position: 'relative',
-        height: '100vh',
-        minHeight: '100%'
-      }}
-    >
+    <div ref={revealRef} className="reveal" style={style}>
       <RevealProvider.Provider value={{ getDeck, isReady, getInitialIndices }}>
         {children}
       </RevealProvider.Provider>

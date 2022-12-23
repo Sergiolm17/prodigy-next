@@ -10,7 +10,14 @@ import Diapositiva5 from './Diapositiva5'
 
 export default function PageHome() {
   return (
-    <RevealMain>
+    <RevealMain
+      style={{
+        position: 'relative',
+        height: '100vh',
+        minHeight: '100%',
+        backgroundImage: 'url(https://i.imgur.com/e4aBUbC.jpg)'
+      }}
+    >
       <Slides>
         <Section id="diapositiva-1">
           <Diapositiva1 />
@@ -23,9 +30,6 @@ export default function PageHome() {
         </Section>
         <Section id="diapositiva-4">
           <Diapositiva4 />
-        </Section>
-        <Section id="diapositiva-5">
-          <Diapositiva5 />
         </Section>
       </Slides>
     </RevealMain>
