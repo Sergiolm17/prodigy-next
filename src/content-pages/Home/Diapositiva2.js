@@ -10,22 +10,24 @@ export default function Diapositiva2() {
   return (
     <>
       <section>
-        <h1>Integración con Facebook Pixel</h1>
+        <h1>Ventajas</h1>
+        <ul>
+          <li>Accede a datos detallados sobre el comportamiento de los usuarios en tu sitio.</li>
+          <li>Segmenta aún más tu audiencia para mostrar anuncios más relevantes.</li>
+          <li>Integración con Facebook Ads y otras plataformas de publicidad pagada.</li>
+        </ul>
       </section>
       <section>
         <h2>Cómo instalar Prodigy en tu sitio web</h2>
         <p>
-          Para instalar Prodigy en tu sitio web, solo tienes que agregar el código de Segmenly al
+          Para instalar Prodigy en tu sitio web, solo tienes que agregar una línea de código en el
           encabezado de tu sitio.
         </p>
-      </section>
-      <section>
-        <h2> Cómo sincronizar Prodigy con Facebook Pixel</h2>
-        <p>
-          Una vez que hayas instalado Prodigy en tu sitio web, podrás sincronizarlo con Facebook
-          Pixel para rastrear las acciones de los usuarios en tu sitio y obtener una segmentación
-          más precisa y detallada para tus anuncios en Facebook.
-        </p>
+        <pre>
+          <code data-trim data-noescape>
+            {"<link href='https://prodigy.wararlabs.com/?id=V3FSDFJUI4'/>"}
+          </code>
+        </pre>
       </section>
     </>
   )
