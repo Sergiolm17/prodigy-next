@@ -15,7 +15,7 @@ export default function PageHome() {
         position: 'relative',
         height: '100vh',
         minHeight: '100%'
-        //backgroundImage: 'url(https://i.imgur.com/e4aBUbC.jpg)'
+        // backgroundImage: 'url(https://i.imgur.com/e4aBUbC.jpg)'
       }}
     >
       <Slides>
@@ -27,9 +27,6 @@ export default function PageHome() {
         </Section>
         <Section id="diapositiva-3">
           <Diapositiva3 />
-        </Section>
-        <Section id="diapositiva-4">
-          <Diapositiva5 />
         </Section>
       </Slides>
     </RevealMain>
